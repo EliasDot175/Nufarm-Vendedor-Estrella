@@ -501,9 +501,6 @@ body {
 p {
   letter-spacing: .5px; }
 
-h3 {
-  letter-spacing: 1px; }
-
 .contenedor {
   width: 1200px;
   margin: 0 auto 40px auto;
@@ -802,6 +799,12 @@ h3 {
   color: #434343;
   font-family: 'Gotham-Light';
   font-weight: bold; }
+.admin .titulo-B {
+  font-size: 12px;
+  color: #434343;
+  font-family: 'Gotham-Light';
+  font-weight: bold;
+  margin-bottom: 20px; }
 .admin .hr-A {
   border-bottom: 1px solid #434343;
   margin: 20px 0 30px 0;
@@ -839,6 +842,18 @@ h3 {
     text-align: center;
     color: #8E3289;
     font-family: 'Open_Sans_Regular'; }
+.admin .block-resumen-A {
+  width: 102%; }
+  .admin .block-resumen-A .block-resumen {
+    width: 23%;
+    margin-right: 2%;
+    height: 160px; }
+  .admin .block-resumen-A .num {
+    padding: 14px 0;
+    font-size: 44px;
+    color: #666; }
+  .admin .block-resumen-A .text {
+    padding: 5px 0; }
 .admin .filtros {
   float: left;
   width: 100%;
@@ -949,20 +964,58 @@ h3 {
     color: #8E3289; }
   .admin .tabla-A .center {
     text-align: center; }
-  .admin .tabla-A .col-1 {
-    width: 24%; }
-  .admin .tabla-A .col-2 {
-    width: 18%; }
-  .admin .tabla-A .col-3 {
-    width: 11%; }
-  .admin .tabla-A .col-4 {
-    width: 20%; }
-  .admin .tabla-A .col-5 {
+  .admin .tabla-A .col-mes {
+    max-width: 10%; }
+  .admin .tabla-A input {
+    max-width: 100px;
+    background-color: transparent;
+    border: none;
+    color: #666;
+    border-bottom: 1px dotted #666;
+    text-align: center; }
+.admin .tabla-mes {
+  width: 100% !important; }
+  .admin .tabla-mes th {
+    padding-bottom: 10px; }
+  .admin .tabla-mes td {
+    border: 2px solid #E1E5E1;
     width: 10%; }
-  .admin .tabla-A .col-6 {
-    width: 7%; }
-  .admin .tabla-A .col-7 {
-    width: 10%; }
+  .admin .tabla-mes .sin-borde {
+    border: none; }
+.admin .format-A .col-1 {
+  width: 24%; }
+.admin .format-A .col-2 {
+  width: 18%; }
+.admin .format-A .col-3 {
+  width: 11%; }
+.admin .format-A .col-4 {
+  width: 20%; }
+.admin .format-A .col-5 {
+  width: 10%; }
+.admin .format-A .col-6 {
+  width: 7%; }
+.admin .format-A .col-7 {
+  width: 10%; }
+.admin .format-B .col-1 {
+  width: 15%; }
+.admin .format-B .col-2 {
+  width: 17%; }
+.admin .format-B .col-3 {
+  width: 15%; }
+.admin .format-B .col-4 {
+  width: 10%; }
+.admin .format-B .col-5 {
+  width: 18%; }
+.admin .format-B .col-6 {
+  width: 9%; }
+.admin .format-B .col-7 {
+  width: 6%; }
+.admin .format-B .col-8 {
+  width: 10%; }
+.admin .grafico {
+  margin: 20px 0; }
+.admin .inputs {
+  margin: 20px 0; }
 
 /* RESPONSIVE  */
 /*mobile--------------------------------------------------*/
@@ -1008,7 +1061,31 @@ h3 {
 
   .admin .filtros .button-image {
     width: 100%;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .admin .format-B .col-1 {
+    width: 25% !important; }
+
+  .admin .format-B .col-2 {
+    width: 25% !important; }
+
+  .admin .format-B .col-3 {
+    display: none !important; }
+
+  .admin .format-B .col-4 {
+    width: 25% !important; }
+
+  .admin .format-B .col-5 {
+    display: none !important; }
+
+  .admin .format-B .col-6 {
+    display: none !important; }
+
+  .admin .format-B .col-7 {
+    display: none !important; }
+
+  .admin .format-B .col-8 {
+    width: 25% !important; } }
 /*tablet----------------------------------------*/
 /**  TABLETS LANDSCAPE **/
 @media screen and (min-width: 767px) and (max-width: 980px) {
@@ -1027,6 +1104,98 @@ h3 {
     width: 33%;
     margin: 0px;
     float: left; } }
+/*notbook------------------------------------*/
+/*desktop------------------------------*/
+/*desktop large-----------------------------------------------*/
+/******** CLIENTE ********/
+.head-cliente {
+  margin-top: 20px;
+  height: 75px;
+  padding: 15px 20px;
+  position: relative;
+  background-color: rgba(201, 201, 201, 0.6);
+  -moz-background-color: rgba(201, 201, 201, 0.6);
+  -webkit-background-color: rgba(201, 201, 201, 0.6);
+  -o-background-color: rgba(201, 201, 201, 0.6);
+  -ms-background-color: rgba(201, 201, 201, 0.6); }
+  .head-cliente h3 {
+    float: left !important;
+    font-size: 17px;
+    color: #434343;
+    font-family: 'BrooklynSamuelsFive-Bold';
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    color: #009448; }
+  .head-cliente select {
+    background-color: #fff;
+    height: 40px;
+    color: #009448;
+    padding: 10px;
+    margin-right: 5px;
+    width: 200px;
+    border: none;
+    float: right;
+    font-size: 12px;
+    font-family: 'BrooklynSamuelsFive-Bold'; }
+
+.hr-cliente {
+  border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+  margin: 50px 0 30px 0;
+  padding: 0;
+  width: 100%;
+  float: left; }
+
+.datos .seleccionar {
+  float: left;
+  background-color: rgba(235, 235, 235, 0.6);
+  -moz-background-color: rgba(235, 235, 235, 0.6);
+  -webkit-background-color: rgba(235, 235, 235, 0.6);
+  -o-background-color: rgba(235, 235, 235, 0.6);
+  -ms-background-color: rgba(235, 235, 235, 0.6); }
+  .datos .seleccionar select {
+    background-color: #fff;
+    height: 40px;
+    color: #009448;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    float: right;
+    font-size: 12px;
+    font-family: 'BrooklynSamuelsFive-Bold'; }
+  .datos .seleccionar .text {
+    float: left; }
+
+.categorias {
+  padding: 20px 0; }
+  .categorias .item {
+    position: relative;
+    height: 120px; }
+    .categorias .item .imagen {
+      margin: 0 auto;
+      display: block; }
+    .categorias .item .num {
+      font-size: 16px;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 5px; }
+    .categorias .item .activo {
+      border: 1px solid #666;
+      border-radius: 100%;
+      padding-top: 4px;
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+      left: 50%;
+      margin-left: -12px; }
+
+/* RESPONSIVE  */
+/*mobile--------------------------------------------------*/
+/*tablet----------------------------------------*/
+/**  TABLETS LANDSCAPE **/
 /*notbook------------------------------------*/
 /*desktop------------------------------*/
 /*desktop large-----------------------------------------------*/

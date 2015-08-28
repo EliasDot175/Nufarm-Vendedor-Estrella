@@ -17,7 +17,7 @@
 				                  	<select name="">   
 				                    		<option value="">FACTURACION 2014/ 2015</option>   
 				                    	</select>    
-				                  	<button class="button-image" type="submit"><img src="assets/images/ver.png" alt=""> VER LISTADO DE RESULTADOS </button>     
+				                  	<button class="button-image" type="submit"><img src="assets/images/ver.png" alt=""> VER RESULTADOS </button>     
 				            </form>    
 			      	</div>
 			</div>
@@ -50,7 +50,7 @@
 				</div>
 
 				<!-- Tabla -->
-				<table class="tabla-A">
+				<table class="tabla-A format-A">
 					<thead>
 						<tr>
 							<th class="col-1">Empresa</th>

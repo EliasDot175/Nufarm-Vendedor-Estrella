@@ -1,5 +1,3 @@
-<?php require_once 'assets/ti.php' ?>
-
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -24,6 +22,9 @@
 
 		<!-- CSS -->
 		<link href="assets/css/estilos.css?v=01" rel="stylesheet" media="screen">
+		
+		<!-- GRAFICOS -->
+		<script src="assets/js/Chart.js"></script>
 	</head>
 
 

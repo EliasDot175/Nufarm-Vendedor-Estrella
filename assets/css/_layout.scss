@@ -121,9 +121,6 @@ p{
        letter-spacing: .5px;
 }
 
-h3{
-       letter-spacing: 1px;
-}
 
 $verde : #009448;
 $violeta : #8E3289;
@@ -396,51 +393,55 @@ $error : #AA4025;
                         box-shadow: 0px 0px 10px rgba(0,0,0,.5);
                         letter-spacing: 1px;
 
-                        .num{
-                                font-family: 'BrooklynSamuelsFive-Bold';
-                                font-size: 38px;
-                                padding-top: 35px;
-                                width: 100%;
-                                text-align: center;
-                                color: #fff;
-                        }
+                                .num{
+                                        font-family: 'BrooklynSamuelsFive-Bold';
+                                        font-size: 38px;
+                                        padding-top: 35px;
+                                        width: 100%;
+                                        text-align: center;
+                                        color: #fff;
+                                }
 
-                       .sombra{
-                                background-image: url('../images/sombra-violeta.png');
-                                background-repeat: no-repeat;
-                                background-position-x: right;
-                                background-position-y: bottom;
-                                position: absolute;
-                                right: 0;
-                                bottom: -5px;
-                                height: 5px;
-                                width: 5px;
-                        }
+                               .sombra{
+                                        background-image: url('../images/sombra-violeta.png');
+                                        background-repeat: no-repeat;
+                                        background-position-x: right;
+                                        background-position-y: bottom;
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: -5px;
+                                        height: 5px;
+                                        width: 5px;
+                                }
 
-                        .text-a{
-                                font-family: 'Brandon_reg';
-                                font-size: 14px;
-                                font-weight: bold;
-                                width: 100%;
-                                text-align: center;
-                                color: #fff;
-                                opacity: .7;
-                                height: 20px;
-                                padding-top: 15px;
-                        }
+                                .text-a{
+                                        font-family: 'Brandon_reg';
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        width: 100%;
+                                        text-align: center;
+                                        color: #fff;
+                                        opacity: .7;
+                                        height: 20px;
+                                        padding-top: 15px;
+                                }
 
-                        .text-b{
-                                font-family: 'Brandon_reg';
-                                font-size: 10px;
-                                font-weight: bold;
-                                width: 100%;
-                                text-align: center;
-                                color: #fff;
-                                opacity: .7;
-                                padding-top: 9px;
+                                .text-b{
+                                        font-family: 'Brandon_reg';
+                                        font-size: 10px;
+                                        font-weight: bold;
+                                        width: 100%;
+                                        text-align: center;
+                                        color: #fff;
+                                        opacity: .7;
+                                        padding-top: 9px;
 
-                        }
+                                }
+
+
                     }
+
+                    
             }
 }
 
@@ -478,7 +479,6 @@ $error : #AA4025;
 .inactivo{
             opacity: .5;
  }
-
 
 
 
