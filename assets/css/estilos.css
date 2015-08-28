@@ -835,13 +835,15 @@ p {
   .admin .block-resumen .num {
     font-family: 'Gotham-Light';
     font-size: 30px;
-    text-align: center; }
+    text-align: center;
+    padding: 5px; }
   .admin .block-resumen .text {
     font-size: 13px;
     font-weight: bold;
     text-align: center;
     color: #8E3289;
-    font-family: 'Open_Sans_Regular'; }
+    font-family: 'Open_Sans_Regular';
+    padding: 5px; }
 .admin .block-resumen-A {
   width: 102%; }
   .admin .block-resumen-A .block-resumen {
@@ -849,11 +851,11 @@ p {
     margin-right: 2%;
     height: 160px; }
   .admin .block-resumen-A .num {
-    padding: 14px 0;
+    padding: 14px 5px;
     font-size: 44px;
     color: #666; }
   .admin .block-resumen-A .text {
-    padding: 5px 0; }
+    padding: 5px 5px; }
 .admin .filtros {
   float: left;
   width: 100%;
@@ -964,8 +966,6 @@ p {
     color: #8E3289; }
   .admin .tabla-A .center {
     text-align: center; }
-  .admin .tabla-A .col-mes {
-    max-width: 10%; }
   .admin .tabla-A input {
     max-width: 100px;
     background-color: transparent;
@@ -974,14 +974,19 @@ p {
     border-bottom: 1px dotted #666;
     text-align: center; }
 .admin .tabla-mes {
-  width: 100% !important; }
+  width: 100% !important;
+  float: left; }
+  .admin .tabla-mes tr {
+    width: 100%; }
   .admin .tabla-mes th {
     padding-bottom: 10px; }
   .admin .tabla-mes td {
     border: 2px solid #E1E5E1;
-    width: 10%; }
+    width: auto; }
   .admin .tabla-mes .sin-borde {
     border: none; }
+  .admin .tabla-mes input {
+    width: 100%; }
 .admin .format-A .col-1 {
   width: 24%; }
 .admin .format-A .col-2 {
@@ -1085,8 +1090,23 @@ p {
     display: none !important; }
 
   .admin .format-B .col-8 {
-    width: 25% !important; } }
+    width: 25% !important; }
+
+  .tabla-mes tr, th, td {
+    font-size: 8px !important; }
+
+  .grafico canvas {
+    width: 100% !important; } }
 /*tablet----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .admin .block-resumen-A .num {
+    font-size: 34px; }
+
+  .admin .block-resumen .text {
+    font-size: 11px; }
+
+  .grafico canvas {
+    width: 100% !important; } }
 /**  TABLETS LANDSCAPE **/
 @media screen and (min-width: 767px) and (max-width: 980px) {
   .admin .sub-contenedor {
@@ -1103,7 +1123,10 @@ p {
   .admin .filtros .button-image {
     width: 33%;
     margin: 0px;
-    float: left; } }
+    float: left; }
+
+  .grafico canvas {
+    width: 100% !important; } }
 /*notbook------------------------------------*/
 /*desktop------------------------------*/
 /*desktop large-----------------------------------------------*/
@@ -1146,25 +1169,60 @@ p {
   width: 100%;
   float: left; }
 
-.datos .seleccionar {
-  float: left;
-  background-color: rgba(235, 235, 235, 0.6);
-  -moz-background-color: rgba(235, 235, 235, 0.6);
-  -webkit-background-color: rgba(235, 235, 235, 0.6);
-  -o-background-color: rgba(235, 235, 235, 0.6);
-  -ms-background-color: rgba(235, 235, 235, 0.6); }
-  .datos .seleccionar select {
-    background-color: #fff;
+.titulo-meses .item {
+  border-bottom: 1px solid #666; }
+.titulo-meses .item-a {
+  width: 65%;
+  float: left; }
+.titulo-meses .item-b {
+  width: 35%;
+  float: left; }
+
+.datos {
+  width: 80%;
+  margin: 0 10%; }
+  .datos .seleccionar {
+    float: left;
+    background-color: rgba(235, 235, 235, 0.6);
+    -moz-background-color: rgba(235, 235, 235, 0.6);
+    -webkit-background-color: rgba(235, 235, 235, 0.6);
+    -o-background-color: rgba(235, 235, 235, 0.6);
+    -ms-background-color: rgba(235, 235, 235, 0.6); }
+    .datos .seleccionar select {
+      background-color: #fff;
+      height: 40px;
+      color: #009448;
+      padding: 10px;
+      width: 200px;
+      border: none;
+      float: right;
+      font-size: 12px;
+      font-family: 'BrooklynSamuelsFive-Bold'; }
+    .datos .seleccionar .text {
+      float: left;
+      font-family: 'Gotham-Light';
+      font-size: 12px;
+      font-weight: bold;
+      padding: 15px; }
+  .datos .progressbar .progress {
     height: 40px;
-    color: #009448;
-    padding: 10px;
-    width: 200px;
-    border: none;
-    float: right;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+  .datos .progressbar .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
     font-size: 12px;
-    font-family: 'BrooklynSamuelsFive-Bold'; }
-  .datos .seleccionar .text {
-    float: left; }
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(141, 198, 63, 0.5);
+    box-shadow: none;
+    border-radius: 0; }
 
 .categorias {
   padding: 20px 0; }
@@ -1194,6 +1252,18 @@ p {
 
 /* RESPONSIVE  */
 /*mobile--------------------------------------------------*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .categorias .item .imagen {
+    width: 80px;
+    margin: 0 auto; }
+
+  .datos .seleccionar .text {
+    width: 100%;
+    text-align: center; }
+
+  .datos .seleccionar select {
+    width: 100%;
+    margin-top: 10px; } }
 /*tablet----------------------------------------*/
 /**  TABLETS LANDSCAPE **/
 /*notbook------------------------------------*/

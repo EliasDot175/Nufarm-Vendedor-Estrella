@@ -85,6 +85,7 @@
 			font-family: 'Gotham-Light';
 			font-size: 30px;
 			text-align: center;
+			padding:5px;
 		}
 
 		.text {
@@ -93,6 +94,7 @@
 			text-align: center;
 			color: $violeta;
 			font-family: 'Open_Sans_Regular';
+			padding:5px;
 		}
 	}
 
@@ -105,12 +107,12 @@
 			height: 160px;
 		}
 		.num {
-			padding:14px 0;
+			padding:14px 5px;
 			font-size: 44px;
 			color: #666;
 		}
 		.text {
-			padding:5px 0;
+			padding:5px 5px;
 		}
 	}
 
@@ -271,10 +273,6 @@
 
 		
 
-		.col-mes{
-			max-width: 10%;
-		}
-
 		input {
 		    max-width: 100px;
 		    background-color: transparent;
@@ -289,6 +287,11 @@
 
 	.tabla-mes {
 		width: 100% !important;
+		float: left;
+
+		tr{
+			width: 100%;
+		}
 
 		th{
 			padding-bottom: 10px;
@@ -296,11 +299,15 @@
 
 		td{
 			border: 2px solid #E1E5E1;
-			width: 10%;
+			width: auto;
 		}
 
 		.sin-borde{
 			border: none;
+		}
+
+		input{
+			width: 100%;
 		}
 
 	}
@@ -371,6 +378,7 @@
 
 	.grafico{
 		margin: 20px 0;
+
 	}
 
 	.inputs{
@@ -472,12 +480,31 @@
 	.admin .format-B .col-8 {
 		width: 25% !important;
 	}
+
+	.tabla-mes tr, th, td{
+		font-size: 8px !important;
+	}
+
+	.grafico canvas{
+		width: 100% !important;
+	}
 }
 
 
 /*tablet----------------------------------------*/
 @media screen and (min-width: 768px) and (max-width : 1280px){
-  
+
+	.admin .block-resumen-A .num {
+	    font-size: 34px;
+	}
+
+	.admin .block-resumen .text {
+	    font-size: 11px;
+	}
+
+	.grafico canvas{
+		width: 100% !important;
+	}
 }
 
 /**  TABLETS LANDSCAPE **/
@@ -502,10 +529,17 @@
 		margin: 0px;
 		float: left;
 	}
+
+	.grafico canvas{
+		width: 100% !important;
+	}
+
+	
 }
 
 /*notbook------------------------------------*/
 @media screen and (min-width: 1280px) and (max-width : 1800px){
+
 	
 }
 

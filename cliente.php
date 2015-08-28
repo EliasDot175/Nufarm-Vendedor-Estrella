@@ -116,18 +116,18 @@
 
 								<!-- categoria -->
 								<div class="categorias col-xs-12 col-sm-12 col-md-12 ol-lg-12">
-									<div class="item col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+									<div class="item col-xs-3 col-sm-3 col-md-3 ol-lg-3">
 										<p class="num">0</p>
 									</div>
-									<div class="item col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+									<div class="item col-xs-3 col-sm-3 col-md-3 ol-lg-3">
 										<img class="imagen" src="assets/images/premio.png" alt="">
 										<p class="num">1</p>
 									</div>
-									<div class="item col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+									<div class="item col-xs-3 col-sm-3 col-md-3 ol-lg-3">
 										<img class="imagen"  src="assets/images/premio.png" alt="">
 										<p class="num activo">2</p>
 									</div>
-									<div class="item col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+									<div class="item col-xs-3 col-sm-3 col-md-3 ol-lg-3">
 										<img class="imagen"  src="assets/images/premio.png" alt="">
 										<p class="num">3</p>
 									</div>
@@ -137,10 +137,15 @@
 								
 
 								<!-- seleccionar -->
-								<div class="datos col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+								<div class="datos">
 
 									<div class="progressbar col-xs-12 col-sm-12 col-md-12 ol-lg-12">
-										
+										<div class="progress">
+										  	<div class="progress-bar" role="progressbar" aria-valuenow="70"
+										  		aria-valuemin="0" aria-valuemax="100" style="width:70%">
+										    		<span class="sr-only">70% Complete</span>
+										  	</div>
+										</div>
 									</div>
 
 									<div class="seleccionar col-xs-12 col-sm-12 col-md-12 ol-lg-12">
@@ -150,13 +155,18 @@
 									           </select>  
 									</div>
 
-
 								</div>
 								<!-- end / seleccionar -->
 
 
 								<!-- meses -->
 								<div class="inputs col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+
+									<div class="titulo-meses col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+										<h3 class="item item-a">2014</h3>
+										<h3 class="item item-b">2015</h3>
+									</div>
+									
 				    					<!-- Tabla -->
 									<table class="tabla-A tabla-mes" >
 										<thead>
