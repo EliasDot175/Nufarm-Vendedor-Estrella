@@ -155,7 +155,10 @@
 									                    	<option value="">TABLET</option>   
 									                    	<option value="">TV LED</option>   
 									           </select>  
+
+									           <img class="ok-seleccion" src="assets/images/ok.png" alt="">
 									</div>
+
 
 								</div>
 								<!-- end / seleccionar -->
@@ -265,5 +268,32 @@
 					</div>
 					<!-- end / Cliente -->
 
+					<!--footer-->
+					<div class="sub-footer col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+					
+					</div>
+					<!--end / footer-->
 
-<?php include 'inc/footer.php' ?>
+
+				</div>
+				<!--end / contenido-->
+
+			</div>
+			<!--end / base-->
+
+		</div>
+		<!-- // CONTENEDOR GENERAL*********************************************-->
+
+		<div class="footer" style="position: relative;">
+                                <img src="assets/images/Nufarm-max-logo-verde.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
+                     </div>
+
+
+		<!-- Librería jS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="assets/js/eventos.js"></script>
+		
+	</body>
+</html>
