@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* DEFAULT -*/
 /* ==========================================================================
    Normalize.scss settings
@@ -466,6 +467,12 @@ li > a:focus {
   src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Light.woff") format("woff2"), url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.otf"), url("../fonts/Gotham-Light.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("../fonts/Gotham-Medium.eot");
+  src: local("Ôÿ║"), url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype"), url("../fonts/Gotham-Medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -773,7 +780,7 @@ p {
 .admin .contenedor-A {
   float: left;
   width: 100%;
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
   background-color: rgba(234, 234, 234, 0.8);
   -moz-background-color: rgba(234, 234, 234, 0.8);
@@ -783,7 +790,7 @@ p {
 .admin .contenedor-B {
   float: left;
   width: 100%;
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.8);
   -moz-background-color: rgba(255, 255, 255, 0.8);
@@ -797,18 +804,29 @@ p {
 .admin .titulo-A {
   font-size: 12px;
   color: #434343;
-  font-family: 'Gotham-Light';
-  font-weight: bold; }
+  font-family: 'Gotham-Medium'; }
 .admin .titulo-B {
   font-size: 12px;
   color: #434343;
-  font-family: 'Gotham-Light';
-  font-weight: bold;
+  font-family: 'Gotham-Medium';
   margin-bottom: 20px; }
 .admin .hr-A {
   border-bottom: 1px solid #434343;
   margin: 20px 0 30px 0;
   padding: 0; }
+.admin .hr-B {
+  border-bottom: 1px solid #434343;
+  margin: 20px 0;
+  padding: 0; }
+.admin .cerrar-pantalla {
+  position: relative; }
+  .admin .cerrar-pantalla img {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    cursor: pointer; }
+    .admin .cerrar-pantalla img:hover {
+      opacity: .8; }
 .admin .block-resumen {
   float: left;
   width: 240px;
@@ -835,15 +853,13 @@ p {
   .admin .block-resumen .num {
     font-family: 'Gotham-Light';
     font-size: 30px;
-    text-align: center;
-    padding: 5px; }
+    text-align: center; }
   .admin .block-resumen .text {
     font-size: 13px;
     font-weight: bold;
     text-align: center;
     color: #8E3289;
-    font-family: 'Open_Sans_Regular';
-    padding: 5px; }
+    font-family: 'Open_Sans_Regular'; }
 .admin .block-resumen-A {
   width: 102%; }
   .admin .block-resumen-A .block-resumen {
@@ -927,10 +943,15 @@ p {
     font-weight: bold;
     font-size: 11px;
     position: relative; }
+  .admin .tabla-A th {
+    font-size: 10px;
+    color: #595959; }
   .admin .tabla-A td {
     height: 40px;
     padding: 5px 10px;
     border: 2px solid #E0E0D1;
+    font-family: 'Gotham-Medium';
+    font-weight: normal;
     /*border: 1px solid rgba(255, 255, 255, 0.8);
     -moz-border: 1px solid rgba(255, 255, 255, 0.8);
     -ms-border: 1px solid rgba(255, 255, 255, 0.8);
@@ -986,7 +1007,8 @@ p {
   .admin .tabla-mes .sin-borde {
     border: none; }
   .admin .tabla-mes input {
-    width: 100%; }
+    width: 100%;
+    font-family: 'Gotham-Medium'; }
 .admin .format-A .col-1 {
   width: 24%; }
 .admin .format-A .col-2 {

@@ -79,6 +79,17 @@
 
 }
 
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: local('☺'), url('../fonts/Gotham-Medium.woff') format('woff'), 
+            url('../fonts/Gotham-Medium.ttf') format('truetype'), 
+            url('../fonts/Gotham-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
             -webkit-appearance: none;
@@ -142,7 +153,7 @@ $error : #AA4025;
 
 .inactivo {
             opacity: .5;
-    }
+}
 
 .head {
             height: 100px;

@@ -32,7 +32,11 @@
 			<div class="sub-contenedor">
 
 				<h3 class="titulo-A">FACTURACIÓN 2014/2015</h3>
-				<hr class="hr-A"> 
+				<hr class="hr-B"> 
+				<div class='cerrar-pantalla col-xs-12 col-sm-12 col-md-12 ol-lg-12'>
+					<img src="assets/images/cerrar-A.png">
+				</div>
+				
 				<h3 class="titulo-B">SANCHEZ AGRONEGOCIOS S.A.</h3> 
 
 				<div class="block-resumen-A">
@@ -216,7 +220,7 @@
 						<?php for ($i=0; $i < 10; $i++) { ?>
 							<!-- item-->
 							<tr>
-								<td class="background-A text-uppercase col-1">
+								<td class="background-A text-uppercase col-1 gris">
 									CRISTIAN CARDETTI
 								</td>
 								<td class="background-A text-uppercase col-2">

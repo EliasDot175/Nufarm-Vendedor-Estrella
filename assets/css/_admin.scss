@@ -6,7 +6,7 @@
 	.contenedor-A{
 		float: left;
 		width: 100%;
-		padding:20px;
+		padding:40px;
 		box-sizing: border-box;
 		background-color: rgba(234,234,234,.80);
 		-moz-background-color: rgba(234,234,234,.80);
@@ -18,7 +18,7 @@
 	.contenedor-B{
 		float: left;
 		width: 100%;
-		padding:20px;
+		padding:40px;
 		box-sizing: border-box;
 		background-color: rgba(255,255,255,.80);
 		-moz-background-color: rgba(255,255,255,.80);
@@ -36,15 +36,13 @@
 	.titulo-A {
 		font-size: 12px;
 		color: #434343;
-		font-family: 'Gotham-Light';
-		font-weight: bold;
+		font-family: 'Gotham-Medium';
 	}
 
 	.titulo-B {
 		font-size: 12px;
 		color: #434343;
-		font-family: 'Gotham-Light';
-		font-weight: bold;
+		font-family: 'Gotham-Medium';
 		margin-bottom: 20px;
 	}
 
@@ -52,6 +50,27 @@
 		border-bottom: 1px solid #434343;
 		margin: 20px 0 30px 0;
 		padding:0;
+	}
+
+	.hr-B {
+		border-bottom: 1px solid #434343;
+		margin: 20px 0 ;
+		padding:0;
+	}
+
+	.cerrar-pantalla{
+	            position: relative;
+
+	            img {
+	                    position: absolute;
+	                    right: 0;
+	                    top: -3px;
+	                    cursor: pointer;
+
+	                     &:hover{
+	                                opacity: .8;
+	                    }
+	            }
 	}
 
 	.block-resumen {
@@ -85,7 +104,6 @@
 			font-family: 'Gotham-Light';
 			font-size: 30px;
 			text-align: center;
-			padding:5px;
 		}
 
 		.text {
@@ -94,7 +112,6 @@
 			text-align: center;
 			color: $violeta;
 			font-family: 'Open_Sans_Regular';
-			padding:5px;
 		}
 	}
 
@@ -211,10 +228,17 @@
 			position: relative;
 		}
 
+		th{
+			font-size: 10px;
+			color: #595959;
+		}
+
 		td{
 			height: 40px;
 			padding: 5px 10px;
 			border: 2px solid #E0E0D1;
+			font-family: 'Gotham-Medium';
+			font-weight: normal;
 			/*border: 1px solid rgba(255, 255, 255, 0.8);
 			-moz-border: 1px solid rgba(255, 255, 255, 0.8);
 			-ms-border: 1px solid rgba(255, 255, 255, 0.8);
@@ -308,6 +332,7 @@
 
 		input{
 			width: 100%;
+			font-family: 'Gotham-Medium';
 		}
 
 	}
