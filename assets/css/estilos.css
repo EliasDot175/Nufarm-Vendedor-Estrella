@@ -960,12 +960,23 @@ p {
   .admin .tabla-A .botones {
     border: none;
     background-color: transparent; }
-  .admin .tabla-A .boton {
-    width: 21px;
-    cursor: pointer; }
-  .admin .tabla-A .boton:hover {
-    opacity: 1;
-    border: 1px solid #8E3289; }
+    .admin .tabla-A .botones .boton {
+      width: 21px;
+      cursor: pointer; }
+      .admin .tabla-A .botones .boton:hover {
+        opacity: 1;
+        border: 1px solid #8E3289; }
+    .admin .tabla-A .botones .ojo {
+      width: 21px;
+      height: 21px;
+      cursor: pointer;
+      background-image: url("../images/ojo-gris.png");
+      background-position: center;
+      background-size: 100% auto; }
+      .admin .tabla-A .botones .ojo:hover {
+        background-image: url("../images/ojo-violeta.png"); }
+    .admin .tabla-A .botones .ojo-activo {
+      background-image: url("assets/images/ojo-violeta.png"); }
   .admin .tabla-A .sub-item {
     padding: 0; }
     .admin .tabla-A .sub-item .item {

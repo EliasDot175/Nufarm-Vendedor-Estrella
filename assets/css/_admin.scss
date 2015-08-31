@@ -249,19 +249,37 @@
 		.botones{
 			border: none;
 			background-color: transparent;
+
+			.boton{
+				width: 21px;
+				cursor: pointer;
+
+				&:hover{
+					opacity: 1;
+					border: 1px solid $violeta;	
+				}
+			}
+
+			.ojo{
+				width: 21px;
+				height: 21px;
+				cursor: pointer;
+				background-image: url('../images/ojo-gris.png');
+				background-position: center;
+				background-size: 100% auto;
+
+				&:hover{
+					background-image: url('../images/ojo-violeta.png');	
+				}
+			}
+
+			.ojo-activo{
+				background-image: url('assets/images/ojo-violeta.png');
+			}
+
 		}
 
-		.boton{
-			width: 21px;
-			cursor: pointer;
-		}
-
-		.boton:hover{
-			opacity: 1;
-			border: 1px solid $violeta;
-			
-		}
-
+		
 		.sub-item{
 			padding: 0;
 

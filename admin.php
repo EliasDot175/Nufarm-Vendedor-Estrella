@@ -91,7 +91,7 @@
 								</td>
 
 								<td class="botones">
-									<img class="boton" src="assets/images/editar.png" alt="">
+									<div class="ojo"></div>
 								</td>
 								
 							</tr>
