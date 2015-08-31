@@ -36,7 +36,6 @@
                      			<div class="block">
                      			<img class="icon-select " src="assets/images/flecha-select.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
                      				<select class="form-control">
-                     					<img class="icon-select " src="assets/images/flecha-select.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
 				  		<option>MARKETING NET</option>
 				  		<option>PLAN DE NEGOCIOS</option>
 				  		<option>VENDEDOR ESTRELLA</option>

@@ -34,6 +34,7 @@
 			<div class="contenedor">
                                  	<img src="assets/images/Nufarm-max-logo.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
                      			<div class="block">
+                     			<img class="icon-select " src="assets/images/flecha-select.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
                      				<select class="form-control">
 				  		<option>MARKETING NET</option>
 				  		<option>PLAN DE NEGOCIOS</option>
@@ -151,7 +152,8 @@
 									<div class="seleccionar col-xs-12 col-sm-12 col-md-12 ol-lg-12">
 										<p class="text text-uppercase">SELECCIONAR PREMIO CATEGORÍA 2</p>
 										<select name="">   
-									                    	<option value="">FACTURACION 2014/ 2015</option>   
+									                    	<option value="">TABLET</option>   
+									                    	<option value="">TV LED</option>   
 									           </select>  
 									</div>
 
