@@ -12,7 +12,6 @@
          url('../fonts/samuelstype_-_brooklynsamuelsfive-bold-webfont.svg#brooklyn_samuelsno5_bold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -139,6 +138,7 @@ $gris : #404040;
 $grisA : #CBCCC0;  
 $grisB : #B1B6A6;
 $error : #AA4025;
+$amarillo : #E5AC0E;
 
 .contenedor {
     width: 1200px;
@@ -228,6 +228,24 @@ $error : #AA4025;
                          }
             }
 }
+
+.titulo-general{
+        width: 100%;
+        float: left;
+        background-color: rgba($amarillo, 0.8);
+      -moz-background-color: rgba($amarillo, 0.8);
+      -ms-background-color: rgba($amarillo, 0.8);
+      -o-background-color: rgba($amarillo, 0.8);
+      -webkit-background-color: rgba($amarillo, 0.8);
+
+      h3{
+        color: #fff;
+        font-size: 14px;
+        font-family: 'BrooklynSamuelsFive-Bold';
+        text-align: center;
+        padding: 10px;
+      }
+    }
 
 .centrado{
     margin: 0 auto;

@@ -20,11 +20,23 @@
 		width: 100%;
 		padding:40px;
 		box-sizing: border-box;
-		background-color: rgba(255,255,255,.80);
+		background-color: rgba(#fff, .80);
 		-moz-background-color: rgba(255,255,255,.80);
 		-ms-background-color: rgba(255,255,255,.80);
 		-o-background-color: rgba(255,255,255,.80);
 		-webkit-background-color: rgba(255,255,255,.80);
+	}
+
+	.contenedor-SELECT {
+	  float: left;
+	  width: 100%;
+	  padding: 40px 40px 40px 40px;
+	  box-sizing: border-box;
+	  background-color: rgba(230, 230, 230, 0.8);
+	  -moz-background-color: rgba(230, 230, 200, 0.8);
+	  -ms-background-color: rgba(230, 230, 200, 0.8);
+	  -o-background-color: rgba(230, 230, 230, 0.8);
+	  -webkit-background-color: rgba(230, 230, 230, 0.8);
 	}
 
 	.sub-contenedor{
@@ -45,6 +57,7 @@
 		font-family: 'Gotham-Medium';
 		margin-bottom: 20px;
 	}
+	
 
 	.hr-A {
 		border-bottom: 1px solid #434343;
@@ -56,6 +69,15 @@
 		border-bottom: 1px solid #434343;
 		margin: 20px 0 ;
 		padding:0;
+	}
+
+	.hr-SELECT {
+	  border: none;
+	  border-bottom: 1px solid #E5AC0E;
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  float: left;
 	}
 
 	.cerrar-pantalla{
@@ -113,6 +135,32 @@
 			color: $violeta;
 			font-family: 'Open_Sans_Regular';
 		}
+
+		.text2 {
+			font-size: 13px;
+			text-align: center;
+			color: #666;
+			font-family: 'Open_Sans_Regular';
+		}
+		.num2 {
+			padding: 5px !important;
+			font-size: 44px;
+			color: #666;
+		}
+
+		.num3 {
+			font-family: 'Gotham-Light';
+			font-size: 30px;
+			text-align: center;
+			padding: 8px 0;
+		}
+
+		.img {
+			display: block;
+			margin: 18px auto;
+		}
+
+		
 	}
 
 	.block-resumen-A {
@@ -131,6 +179,8 @@
 		.text {
 			padding:5px 5px;
 		}
+
+		
 	}
 
 
@@ -195,6 +245,83 @@
 		.button-image {
 		    position: relative;
 		    padding-left: 35px;
+		}
+	}
+
+	.contenedor-TABLA{
+	    padding: 0px 40px 40px 40px;
+	}
+
+	.contenedor-HEAD{
+	    padding: 40px 40px 20px 40px;
+	}
+
+
+	.format-C {
+		.col-1 {
+		  width: 30%;
+		}
+
+		.col-2 {
+		  width: 20%;
+		}
+
+		.col-3 {
+		  width: 30%;
+		}
+
+		.col-4 {
+		  width: 20%;
+		}
+	}
+
+	.tabla-mes {
+		.guardar {
+		    background: transparent;
+		    border: none;
+		    width: 110px;
+
+			img {
+			    float:left;
+			}
+
+			p {
+			    float:left;
+			    color:#666;
+			    font-size: 10px;
+			}
+		}
+	}
+
+	.tabla-mes {
+	  width: 111% !important;
+	}
+
+	.titulo-meses-B{
+	    padding-left: 7%;
+	      margin-top: 30px;
+	}
+
+	.titulo-bottom{
+	    padding-top: 40px;
+	}
+
+	.tabla-mes-vendedor{
+	      margin: 40px 0 10px 0 !important;
+	}
+
+	.filtros {
+		.button-B {
+		  background-color: $amarillo;
+		  color: #fff;
+		  border: none;
+		  height: 40px;
+		  width: auto;
+		  margin-right: 20px;
+		  border: none;
+		  float: left;
+		  font-size: 11px;
+		  text-transform: uppercase;
 		}
 	}
 

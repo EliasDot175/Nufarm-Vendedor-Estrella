@@ -470,7 +470,7 @@ li > a:focus {
 @font-face {
   font-family: 'Gotham-Medium';
   src: url("../fonts/Gotham-Medium.eot");
-  src: local("Ôÿ║"), url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype"), url("../fonts/Gotham-Medium.svg") format("svg");
+  src: local("☺"), url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype"), url("../fonts/Gotham-Medium.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 input[type=number]::-webkit-outer-spin-button,
@@ -571,6 +571,21 @@ p {
       float: left; }
     .head .logout:hover {
       opacity: .5; }
+
+.titulo-general {
+  width: 100%;
+  float: left;
+  background-color: rgba(229, 172, 14, 0.8);
+  -moz-background-color: rgba(229, 172, 14, 0.8);
+  -ms-background-color: rgba(229, 172, 14, 0.8);
+  -o-background-color: rgba(229, 172, 14, 0.8);
+  -webkit-background-color: rgba(229, 172, 14, 0.8); }
+  .titulo-general h3 {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'BrooklynSamuelsFive-Bold';
+    text-align: center;
+    padding: 10px; }
 
 .centrado {
   margin: 0 auto; }
@@ -798,6 +813,16 @@ p {
   -ms-background-color: rgba(255, 255, 255, 0.8);
   -o-background-color: rgba(255, 255, 255, 0.8);
   -webkit-background-color: rgba(255, 255, 255, 0.8); }
+.admin .contenedor-SELECT {
+  float: left;
+  width: 100%;
+  padding: 40px 40px 40px 40px;
+  box-sizing: border-box;
+  background-color: rgba(230, 230, 230, 0.8);
+  -moz-background-color: rgba(230, 230, 200, 0.8);
+  -ms-background-color: rgba(230, 230, 200, 0.8);
+  -o-background-color: rgba(230, 230, 230, 0.8);
+  -webkit-background-color: rgba(230, 230, 230, 0.8); }
 .admin .sub-contenedor {
   float: left;
   width: 90%;
@@ -819,6 +844,13 @@ p {
   border-bottom: 1px solid #434343;
   margin: 20px 0;
   padding: 0; }
+.admin .hr-SELECT {
+  border: none;
+  border-bottom: 1px solid #E5AC0E;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left; }
 .admin .cerrar-pantalla {
   position: relative; }
   .admin .cerrar-pantalla img {
@@ -861,6 +893,23 @@ p {
     text-align: center;
     color: #8E3289;
     font-family: 'Open_Sans_Regular'; }
+  .admin .block-resumen .text2 {
+    font-size: 13px;
+    text-align: center;
+    color: #666;
+    font-family: 'Open_Sans_Regular'; }
+  .admin .block-resumen .num2 {
+    padding: 5px !important;
+    font-size: 44px;
+    color: #666; }
+  .admin .block-resumen .num3 {
+    font-family: 'Gotham-Light';
+    font-size: 30px;
+    text-align: center;
+    padding: 8px 0; }
+  .admin .block-resumen .img {
+    display: block;
+    margin: 18px auto; }
 .admin .block-resumen-A {
   width: 102%; }
   .admin .block-resumen-A .block-resumen {
@@ -922,6 +971,48 @@ p {
   .admin .filtros .button-image {
     position: relative;
     padding-left: 35px; }
+.admin .contenedor-TABLA {
+  padding: 0px 40px 40px 40px; }
+.admin .contenedor-HEAD {
+  padding: 40px 40px 20px 40px; }
+.admin .format-C .col-1 {
+  width: 30%; }
+.admin .format-C .col-2 {
+  width: 20%; }
+.admin .format-C .col-3 {
+  width: 30%; }
+.admin .format-C .col-4 {
+  width: 20%; }
+.admin .tabla-mes .guardar {
+  background: transparent;
+  border: none;
+  width: 110px; }
+  .admin .tabla-mes .guardar img {
+    float: left; }
+  .admin .tabla-mes .guardar p {
+    float: left;
+    color: #666;
+    font-size: 10px; }
+.admin .tabla-mes {
+  width: 111% !important; }
+.admin .titulo-meses-B {
+  padding-left: 7%;
+  margin-top: 30px; }
+.admin .titulo-bottom {
+  padding-top: 40px; }
+.admin .tabla-mes-vendedor {
+  margin: 40px 0 10px 0 !important; }
+.admin .filtros .button-B {
+  background-color: #E5AC0E;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+  border: none;
+  float: left;
+  font-size: 11px;
+  text-transform: uppercase; }
 .admin .tabla-A {
   float: left;
   margin: 40px 0;

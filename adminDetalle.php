@@ -32,7 +32,16 @@
 			<div class="sub-contenedor">
 
 				<h3 class="titulo-A">FACTURACIÓN 2014/2015</h3>
-				<hr class="hr-B"> 
+			</div>
+		</div>
+		<!-- end / contenedor B -->
+
+		<hr class="hr-SELECT">
+
+		<!-- contenedor SELECT -->
+		<div class="contenedor-SELECT col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+			<div class="sub-contenedor">
+			
 				<div class='cerrar-pantalla col-xs-12 col-sm-12 col-md-12 ol-lg-12'>
 					<img src="assets/images/cerrar-A.png">
 				</div>
