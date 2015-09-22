@@ -2,10 +2,10 @@
 
 
 	<!--Admin -->
-	<div class="admin col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+	<div class="admin col-xs-12">
 
 		<!-- contenedor A -->
-		<div class="contenedor-A col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+		<div class="contenedor-A col-xs-12">
 			<div class="sub-contenedor">
 				<div class="filtros">   
 				            <form action="" method="POST"> 
@@ -28,7 +28,7 @@
 		<!-- end / contenedor A -->
 
 		<!-- contenedor B -->
-		<div class="contenedor-B col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+		<div class="contenedor-B col-xs-12">
 			<div class="sub-contenedor">
 
 				<h3 class="titulo-A">FACTURACIÓN 2014/2015</h3>
@@ -36,20 +36,18 @@
 		</div>
 		<!-- end / contenedor B -->
 
-		<hr class="hr-SELECT">
-
 		<!-- contenedor SELECT -->
-		<div class="contenedor-SELECT col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+		<div class="contenedor-SELECT col-xs-12">
 			<div class="sub-contenedor">
 			
-				<div class='cerrar-pantalla col-xs-12 col-sm-12 col-md-12 ol-lg-12'>
+				<div class='cerrar-pantalla col-xs-12'>
 					<img src="assets/images/cerrar-A.png">
 				</div>
 				
 				<h3 class="titulo-B">SANCHEZ AGRONEGOCIOS S.A.</h3> 
 
 				<div class="block-resumen-A">
-					<div class="block-resumen col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+					<div class="block-resumen col-xs-12 col-sm-3">
 						<div class="num">212.769</div>
 						<hr class="hr-resumen"> 
 						 <div class="text">
@@ -57,7 +55,7 @@
 						</div>
 					</div>
 
-					<div class="block-resumen col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+					<div class="block-resumen col-xs-12 col-sm-3">
 						<div class="num">50%</div>
 						<hr class="hr-resumen"> 
 						 <div class="text">
@@ -65,7 +63,7 @@
 						</div>
 					</div>
 
-					<div class="block-resumen col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+					<div class="block-resumen col-xs-12 col-sm-3">
 						<div class="num">129%</div>
 						<hr class="hr-resumen"> 
 						 <div class="text">
@@ -73,7 +71,7 @@
 						</div>
 					</div>
 
-					<div class="block-resumen col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+					<div class="block-resumen col-xs-12 col-sm-3">
 						<div class="num">2</div>
 						<hr class="hr-resumen"> 
 						 <div class="text">
@@ -84,10 +82,16 @@
 
 
 				<!-- Inputs -->
-				<div class="inputs col-xs-12 col-sm-12 col-md-12 ol-lg-12">
-    					<!-- Tabla -->
+				<div class="inputs col-xs-12">
+					<h3 class="titulo-C">detalle de productos clave</h3>
+					<!-- Tabla -->
 					<table class="tabla-A tabla-mes" >
 						<thead>
+                        	<tr>
+								<th class=""></th>
+								<th colspan="5" class="text-uppercase col-year"><p>2014</p></th>
+								<th colspan="3" class="text-uppercase col-year"><p>2015</p></th>
+							</tr>
 							<tr>
 								<th class="text-uppercase col-mes"></th>
 								<th class="text-uppercase col-mes">Agosto</th>
@@ -106,28 +110,28 @@
 								<td class="sin-borde">
 									P.Total
 								</td>
-								<td class=" background-A text-uppercase   col-mes">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="10.789">
 								</td>
-								<td class="background-A text-uppercase   col-mes">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="30.100">
 								</td>
-								<td class="background-A text-uppercase ">
+								<td class="background-A text-uppercase">
 									<input type="text" name="" value="50.789">
 								</td>
-								<td class="background-B text-uppercase  col-mes">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="20.889">
 								</td>
-								<td class="background-B text-uppercase  col-mes ">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="10.000">
 								</td>
-								<td class="background-A text-uppercase  col-mes ">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="51.000">
 								</td>
-								<td class="background-A text-uppercase  col-mes" >
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="40.020">
 								</td>
-								<td class="background-A text-uppercase  col-mes">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="100.789">
 								</td>
 								
@@ -138,28 +142,28 @@
 								<td class="sin-borde">
 									P.Clave
 								</td>
-								<td class=" background-A text-uppercase ">
+								<td class=" background-A text-uppercase">
 									<input type="text" name="" value="10.789">
 								</td>
-								<td class="background-A text-uppercase  col-mes ">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="30.100">
 								</td>
-								<td class="background-A text-uppercase  col-mes ">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="50.789">
 								</td>
-								<td class="background-B text-uppercase  col-mes ">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="20.889">
 								</td>
-								<td class="background-B text-uppercase  col-mes  ">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="10.000">
 								</td>
-								<td class="background-A text-uppercase  col-mes  ">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="51.000">
 								</td>
-								<td class="background-A text-uppercase  col-mes " >
+								<td class="background-A text-uppercase col-mes" >
 									<input type="text" name="" value="40.020">
 								</td>
-								<td class="background-A text-uppercase  col-mes ">
+								<td class="background-A text-uppercase col-mes">
 									<input type="text" name="" value="100.789">
 								</td>
 								
@@ -173,7 +177,7 @@
 				<!-- end / Inputs -->
 
 				<!-- Gráfico -->
-				<div class="grafico col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+				<div class="grafico col-xs-12">
 					<canvas id="canvas" height="125" width="600"></canvas>
 				</div>
 				<!-- end / Gráfico -->
@@ -184,16 +188,27 @@
 					var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 					var lineChartData = {
 						//labels : ["Agosto","Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo"], con labels
-						labels : ["","","","","","","",""], // sin labels
+						labels : ["","","",""], // sin labels
 						datasets : [
 							{
+								label: "My First dataset",
 								fillColor : "rgba(0,0,0,0.1)",
-								strokeColor : "rgba(220,220,220,1)",
+								strokeColor : "rgba(220,220,220,0)",
 								pointColor : "#666666",
 								pointStrokeColor : "#666666",
 								pointHighlightFill : "#666666",
 								pointHighlightStroke : "rgba(220,220,220,1)",
-								data : ['0.5','0.8','0.5','1','1.5','1.8','2','2.5'] //valor correspondiente a la categoria de 0 a 3 por mes
+								data : ['0.5','0.8','0.5','1'] //valor correspondiente a la categoria de 0 a 3 por mes
+							},
+							{
+								label: "My First dataset 2",
+								fillColor : "rgba(0,0,0,0.1)",
+								strokeColor : "rgba(220,220,220,0)",
+								pointColor : "#666666",
+								pointStrokeColor : "#666666",
+								pointHighlightFill : "#666666",
+								pointHighlightStroke : "rgba(220,220,220,1)",
+								data : ['1','2','3','14'] //valor correspondiente a la categoria de 0 a 3 por mes
 							},
 						]
 
@@ -202,7 +217,22 @@
 					window.onload = function(){
 						var ctx = document.getElementById("canvas").getContext("2d");
 						window.myLine = new Chart(ctx).Line(lineChartData, {
-							responsive: true
+							// Boolean - Whether to show labels on the scale
+						    scaleShowLabels: true,
+						    // Interpolated JS string - can access value
+						    scaleLabel: "<%= value %> %",
+							responsive: true,
+							scaleShowGridLines : true,
+							//String - Colour of the grid lines
+						    scaleGridLineColor : "rgba(0,0,0,.05)",
+						    //Number - Width of the grid lines
+						    scaleGridLineWidth : 1,
+						    //Boolean - Whether to show horizontal lines (except X axis)
+						    scaleShowHorizontalLines: true,
+						    //Boolean - Whether to show vertical lines (except Y axis)
+						    scaleShowVerticalLines: false,
+						    //Number - Radius of each point dot in pixels
+    						pointDotRadius : 2,
 						});
 					}
 				</script>

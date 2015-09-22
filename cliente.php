@@ -19,34 +19,72 @@
 
 		<!-- CSS de font-awesome-4.3.0 para iconos sociales-->
 		<link href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
-
+		
+		<!-- Librería jS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="assets/js/eventos.js"></script>
+		<script src="assets/js/jquery.canvasjs.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".chartContainer").CanvasJSChart({
+					title: {
+						text: "Monthly Rainfall in Columbus - 1996"
+					},
+					axisY: {
+						title: "Rainfall in mm",
+						includeZero: false
+					},
+					axisX: {
+						interval: 1
+					},
+					data: [
+					{
+						type: "line", //try changing to column, area
+						toolTipContent: "{label}: {y} mm",
+						dataPoints: [
+							{ label: "Jan",  y: 5.28 },
+							{ label: "Feb",  y: 3.83 },
+							{ label: "March",y: 6.55 },
+							{ label: "April",y: 4.81 },
+							{ label: "May",  y: 2.37 },
+							{ label: "June", y: 2.33 },
+							{ label: "July", y: 3.06 },
+							{ label: "Aug",  y: 2.94 },
+							{ label: "Sep",  y: 5.41 },
+							{ label: "Oct",  y: 2.17 },
+							{ label: "Nov",  y: 2.17 },
+							{ label: "Dec",  y: 2.80 }
+						]
+					}
+					]
+				});
+			});
+		</script>
+		
 		<!-- CSS -->
 		<link href="assets/css/estilos.css?v=01" rel="stylesheet" media="screen">
-		
-		<!-- GRAFICOS -->
-		<script src="assets/js/Chart.js"></script>
 	</head>
-
-
 	<body>
 
 		<div class="head">
 			<div class="contenedor">
-                                 	<img src="assets/images/Nufarm-max-logo.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
-                     			<div class="block">
-                     			<img class="icon-select " src="assets/images/flecha-select.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
-                     				<select class="form-control">
-				  		<option>MARKETING NET</option>
-				  		<option>PLAN DE NEGOCIOS</option>
-				  		<option>VENDEDOR ESTRELLA</option>
+             	<img src="assets/images/Nufarm-max-logo.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
+				<div class="block">
+					<img class="icon-select " src="assets/images/flecha-select.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
+					<select class="form-control">
+						<option>MARKETING NET</option>
+						<option>PLAN DE NEGOCIOS</option>
+						<option>VENDEDOR ESTRELLA</option>
 					</select>
 					<div class="logout">
 						<p class="text-uppercase">salir</p>
 						<img src="assets/images/cerrar.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
 					</div>
-                     			</div>
-                         	</div>
-                      </div>
+				</div>
+         	</div>
+      	</div>
 
 
 		<!-- CONTENEDOR GENERAL***********************************************************-->
@@ -56,31 +94,26 @@
 			<div class="base">
 
 				<!-- head -->
-				<div class=" head-cliente col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+				<div class=" head-cliente col-xs-12">
 					<h3 class="titulo-A">FACTURACIÓN</h3>
 					<select name="">   
-				                    	<option value="">FACTURACION 2014/ 2015</option>   
-				           </select>  
+                		<option value="">FACTURACION 2014/ 2015</option>   
+		           	</select>  
 				</div>
 				<!-- end / head -->
 
 				<!--contenido-->
-				<div class="contenido col-xs-12 col-sm-12 col-md-12 ol-lg-12">
-
-					
+				<div class="contenido col-xs-12">
 
 					<!--Cliente -->
-					<div class="admin col-xs-12 col-sm-12 col-md-12 ol-lg-12">
-
-						
-
+					<div class="admin col-xs-12">
 						<!-- contenedor B -->
-						<div class="contenedor-B col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+						<div class="contenedor-B col-xs-12">
 							
 								<h3 class="titulo-B">SANCHEZ AGRONEGOCIOS S.A.</h3> 
 
 								<div class="block-resumen-A">
-									<div class="block-resumen col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+									<div class="block-resumen col-xs-12 col-sm-3">
 										<div class="num">212.769</div>
 										<hr class="hr-resumen"> 
 										 <div class="text">
@@ -88,7 +121,7 @@
 										</div>
 									</div>
 
-									<div class="block-resumen col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+									<div class="block-resumen col-xs-12 col-sm-3">
 										<div class="num">50%</div>
 										<hr class="hr-resumen"> 
 										 <div class="text">
@@ -96,7 +129,7 @@
 										</div>
 									</div>
 
-									<div class="block-resumen col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+									<div class="block-resumen col-xs-12 col-sm-3">
 										<div class="num">129%</div>
 										<hr class="hr-resumen"> 
 										 <div class="text">
@@ -104,7 +137,7 @@
 										</div>
 									</div>
 
-									<div class="block-resumen col-xs-12 col-sm-3 col-md-3 ol-lg-3">
+									<div class="block-resumen col-xs-12 col-sm-3">
 										<div class="num">2</div>
 										<hr class="hr-resumen"> 
 										 <div class="text">
@@ -113,61 +146,61 @@
 									</div>
 								</div>
 
+
+								<!-- Gráfico -->
+								<div class="chartContainer col-xs-12" style="height: 400px;">
+
+								</div>
+								<!-- end / Gráfico -->
+
 								<hr class="hr-cliente">
 
 								<!-- categoria -->
-								<div class="categorias col-xs-12 col-sm-12 col-md-12 ol-lg-12">
-									<div class="item col-xs-3 col-sm-3 col-md-3 ol-lg-3">
+								<div class="categorias col-xs-12">
+									<div class="item col-xs-3">
 										<p class="num">0</p>
 									</div>
-									<div class="item col-xs-3 col-sm-3 col-md-3 ol-lg-3">
+									<div class="item col-xs-3">
 										<img class="imagen" src="assets/images/premio.png" alt="">
 										<p class="num">1</p>
 									</div>
-									<div class="item col-xs-3 col-sm-3 col-md-3 ol-lg-3">
+									<div class="item col-xs-3">
 										<img class="imagen"  src="assets/images/premio.png" alt="">
 										<p class="num activo">2</p>
 									</div>
-									<div class="item col-xs-3 col-sm-3 col-md-3 ol-lg-3">
+									<div class="item col-xs-3">
 										<img class="imagen"  src="assets/images/premio.png" alt="">
 										<p class="num">3</p>
 									</div>
 								</div>
 								<!-- end / categoria -->
-								
-								
 
 								<!-- seleccionar -->
 								<div class="datos">
-
-									<div class="progressbar col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+									<div class="progressbar col-xs-12">
 										<div class="progress">
-										  	<div class="progress-bar" role="progressbar" aria-valuenow="70"
-										  		aria-valuemin="0" aria-valuemax="100" style="width:70%">
-										    		<span class="sr-only">70% Complete</span>
+										  	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+									    		<span class="sr-only">70% Complete</span>
 										  	</div>
 										</div>
 									</div>
 
-									<div class="seleccionar col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+									<div class="seleccionar col-xs-12">
 										<p class="text text-uppercase">SELECCIONAR PREMIO CATEGORÍA 2</p>
 										<select name="">   
-									                    	<option value="">TABLET</option>   
-									                    	<option value="">TV LED</option>   
-									           </select>  
-
-									           <img class="ok-seleccion" src="assets/images/ok.png" alt="">
+					                    	<option value="">TABLET</option>   
+					                    	<option value="">TV LED</option>   
+							           	</select>
+							          	<img class="ok-seleccion" src="assets/images/ok.png" alt="">
 									</div>
-
-
 								</div>
 								<!-- end / seleccionar -->
 
 
 								<!-- meses -->
-								<div class="inputs col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+								<div class="inputs col-xs-12">
 
-									<div class="titulo-meses col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+									<div class="titulo-meses col-xs-12">
 										<h3 class="item item-a">2014</h3>
 										<h3 class="item item-b">2015</h3>
 									</div>
@@ -190,28 +223,28 @@
 
 											<!-- item-->
 											<tr>
-												<td class=" background-A text-uppercase center">
+												<td class="background-A text-uppercase center">
 													10.789
 												</td>
-												<td class="background-A text-uppercase  col-mes center ">
+												<td class="background-A text-uppercase col-mes center ">
 													30.100
 												</td>
-												<td class="background-A text-uppercase  col-mes center">
+												<td class="background-A text-uppercase col-mes center">
 													50.789
 												</td>
-												<td class="background-B text-uppercase  col-mes  center">
+												<td class="background-B text-uppercase col-mes center">
 													20.889
 												</td>
-												<td class="background-B text-uppercase  col-mes  center ">
+												<td class="background-B text-uppercase col-mes center ">
 													10.000
 												</td>
-												<td class="background-A text-uppercase  col-mes  center ">
+												<td class="background-A text-uppercase col-mes center ">
 													51.000
 												</td>
-												<td class="background-A text-uppercase  col-mes  center" >
+												<td class="background-A text-uppercase col-mes center" >
 													40.020
 												</td>
-												<td class="background-A text-uppercase  col-mes  center">
+												<td class="background-A text-uppercase col-mes center">
 													100.789
 												</td>
 												
@@ -223,44 +256,6 @@
 									<!-- end / Tabla -->
 								</div>
 								<!-- end / meses -->
-
-								<!-- Gráfico -->
-								<div class="grafico col-xs-12 col-sm-12 col-md-12 ol-lg-12">
-									<canvas id="canvas" height="125" width="600"></canvas>
-								</div>
-								<!-- end / Gráfico -->
-
-
-								<!-- ScriptGráfico -->
-								<script>
-									var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
-									var lineChartData = {
-										//labels : ["Agosto","Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo"], con labels
-										labels : ["","","","","","","",""], // sin labels
-										datasets : [
-											{
-												fillColor : "rgba(0,0,0,0.1)",
-												strokeColor : "rgba(220,220,220,1)",
-												pointColor : "#666666",
-												pointStrokeColor : "#666666",
-												pointHighlightFill : "#666666",
-												pointHighlightStroke : "rgba(220,220,220,1)",
-												data : ['0.5','0.8','0.5','1','1.5','1.8','2','2.5'] //valor correspondiente a la categoria de 0 a 3 por mes
-											},
-										]
-
-									}
-
-									window.onload = function(){
-										var ctx = document.getElementById("canvas").getContext("2d");
-										window.myLine = new Chart(ctx).Line(lineChartData, {
-											responsive: true
-										});
-									}
-								</script>
-								<!-- end / SciptGráfico -->
-
-							
 						</div>
 						<!-- end / contenedor B -->
 
@@ -269,12 +264,10 @@
 					<!-- end / Cliente -->
 
 					<!--footer-->
-					<div class="sub-footer col-xs-12 col-sm-12 col-md-12 ol-lg-12">
+					<div class="sub-footer col-xs-12">
 					
 					</div>
 					<!--end / footer-->
-
-
 				</div>
 				<!--end / contenido-->
 
@@ -285,15 +278,8 @@
 		<!-- // CONTENEDOR GENERAL*********************************************-->
 
 		<div class="footer" style="position: relative;">
-                                <img src="assets/images/Nufarm-max-logo-verde.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
-                     </div>
+            <img src="assets/images/Nufarm-max-logo-verde.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
+         </div>
 
-
-		<!-- Librería jS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-		<script src="assets/js/eventos.js"></script>
-		
 	</body>
 </html>
