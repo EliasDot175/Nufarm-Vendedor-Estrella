@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -26,256 +25,351 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script src="assets/js/eventos.js"></script>
 		<script src="assets/js/jquery.canvasjs.min.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$(".chartContainer").CanvasJSChart({
-					title: {
-						text: "Monthly Rainfall in Columbus - 1996"
-					},
-					axisY: {
-						title: "Rainfall in mm",
-						includeZero: false
-					},
-					axisX: {
-						interval: 1
-					},
-					data: [
-					{
-						type: "line", //try changing to column, area
-						toolTipContent: "{label}: {y} mm",
-						dataPoints: [
-							{ label: "Jan",  y: 5.28 },
-							{ label: "Feb",  y: 3.83 },
-							{ label: "March",y: 6.55 },
-							{ label: "April",y: 4.81 },
-							{ label: "May",  y: 2.37 },
-							{ label: "June", y: 2.33 },
-							{ label: "July", y: 3.06 },
-							{ label: "Aug",  y: 2.94 },
-							{ label: "Sep",  y: 5.41 },
-							{ label: "Oct",  y: 2.17 },
-							{ label: "Nov",  y: 2.17 },
-							{ label: "Dec",  y: 2.80 }
-						]
-					}
-					]
-				});
-			});
-		</script>
 		
 		<!-- CSS -->
 		<link href="assets/css/estilos.css?v=01" rel="stylesheet" media="screen">
 	</head>
 	<body>
-
-		<div class="head">
-			<div class="contenedor">
-             	<img src="assets/images/Nufarm-max-logo.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
-				<div class="block">
-					<img class="icon-select " src="assets/images/flecha-select.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
-					<select class="form-control">
-						<option>MARKETING NET</option>
-						<option>PLAN DE NEGOCIOS</option>
-						<option>VENDEDOR ESTRELLA</option>
-					</select>
-					<div class="logout">
-						<p class="text-uppercase">salir</p>
-						<img src="assets/images/cerrar.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
-					</div>
-				</div>
-         	</div>
-      	</div>
-
-
-		<!-- CONTENEDOR GENERAL***********************************************************-->
-		<div class="contenedor ">
-
-			<!--base-->
-			<div class="base">
-
-				<!-- head -->
-				<div class=" head-cliente col-xs-12">
-					<h3 class="titulo-A">FACTURACIÓN</h3>
-					<select name="">   
-                		<option value="">FACTURACION 2014/ 2015</option>   
-		           	</select>  
-				</div>
-				<!-- end / head -->
-
-				<!--contenido-->
-				<div class="contenido col-xs-12">
-
-					<!--Cliente -->
-					<div class="admin col-xs-12">
-						<!-- contenedor B -->
-						<div class="contenedor-B col-xs-12">
-							
-								<h3 class="titulo-B">SANCHEZ AGRONEGOCIOS S.A.</h3> 
-
-								<div class="block-resumen-A">
-									<div class="block-resumen col-xs-12 col-sm-3">
-										<div class="num">212.769</div>
-										<hr class="hr-resumen"> 
-										 <div class="text">
-											Facturación total
-										</div>
-									</div>
-
-									<div class="block-resumen col-xs-12 col-sm-3">
-										<div class="num">50%</div>
-										<hr class="hr-resumen"> 
-										 <div class="text">
-											Facturación Productos Clave
-										</div>
-									</div>
-
-									<div class="block-resumen col-xs-12 col-sm-3">
-										<div class="num">129%</div>
-										<hr class="hr-resumen"> 
-										 <div class="text">
-											Avance Productos Clave
-										</div>
-									</div>
-
-									<div class="block-resumen col-xs-12 col-sm-3">
-										<div class="num">2</div>
-										<hr class="hr-resumen"> 
-										 <div class="text">
-											Accede a categoría
-										</div>
-									</div>
+		<div class="container-fluid">
+			<section id="header">
+				<div class="row">
+					<div class="col-xs-12 header">
+						<div class="inner">
+							<div class="row">
+								<div class="col-xs-6">
+									<img src="assets/images/Nufarm-max-logo.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
 								</div>
-
-
-								<!-- Gráfico -->
-								<div class="chartContainer col-xs-12" style="height: 400px;">
-
-								</div>
-								<!-- end / Gráfico -->
-
-								<hr class="hr-cliente">
-
-								<!-- categoria -->
-								<div class="categorias col-xs-12">
-									<div class="item col-xs-3">
-										<p class="num">0</p>
-									</div>
-									<div class="item col-xs-3">
-										<img class="imagen" src="assets/images/premio.png" alt="">
-										<p class="num">1</p>
-									</div>
-									<div class="item col-xs-3">
-										<img class="imagen"  src="assets/images/premio.png" alt="">
-										<p class="num activo">2</p>
-									</div>
-									<div class="item col-xs-3">
-										<img class="imagen"  src="assets/images/premio.png" alt="">
-										<p class="num">3</p>
-									</div>
-								</div>
-								<!-- end / categoria -->
-
-								<!-- seleccionar -->
-								<div class="datos">
-									<div class="progressbar col-xs-12">
-										<div class="progress">
-										  	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-									    		<span class="sr-only">70% Complete</span>
-										  	</div>
-										</div>
-									</div>
-
-									<div class="seleccionar col-xs-12">
-										<p class="text text-uppercase">SELECCIONAR PREMIO CATEGORÍA 2</p>
-										<select name="">   
-					                    	<option value="">TABLET</option>   
-					                    	<option value="">TV LED</option>   
-							           	</select>
-							          	<img class="ok-seleccion" src="assets/images/ok.png" alt="">
-									</div>
-								</div>
-								<!-- end / seleccionar -->
-
-
-								<!-- meses -->
-								<div class="inputs col-xs-12">
-
-									<div class="titulo-meses col-xs-12">
-										<h3 class="item item-a">2014</h3>
-										<h3 class="item item-b">2015</h3>
-									</div>
+								<div class="col-xs-6 controls">
 									
-				    					<!-- Tabla -->
-									<table class="tabla-A tabla-mes" >
-										<thead>
-											<tr>
-												<th class="text-uppercase col-mes">Agosto</th>
-												<th class="text-uppercase col-mes">Septiembre</th>
-												<th class="text-uppercase col-mes">Octubre</th>
-												<th class="text-uppercase col-mes">Noviembre</th>
-												<th class="text-uppercase col-mes">Diciembre</th>
-												<th class="text-uppercase col-mes">Enero</th>
-												<th class="text-uppercase col-mes">Febrero</th>
-												<th class="text-uppercase col-mes">Marzo</th>
-											</tr>
-										</thead>
-										<tbody>
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											Dropdown
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+									<div class="logout">
+										<p class="text-uppercase">salir</p>
+										<img src="assets/images/cerrar.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
+									</div>
 
-											<!-- item-->
-											<tr>
-												<td class="background-A text-uppercase center">
-													10.789
-												</td>
-												<td class="background-A text-uppercase col-mes center ">
-													30.100
-												</td>
-												<td class="background-A text-uppercase col-mes center">
-													50.789
-												</td>
-												<td class="background-B text-uppercase col-mes center">
-													20.889
-												</td>
-												<td class="background-B text-uppercase col-mes center ">
-													10.000
-												</td>
-												<td class="background-A text-uppercase col-mes center ">
-													51.000
-												</td>
-												<td class="background-A text-uppercase col-mes center" >
-													40.020
-												</td>
-												<td class="background-A text-uppercase col-mes center">
-													100.789
-												</td>
-												
-											</tr>
-											<!-- end / item-->
-
-										</tbody>
-									</table>
-									<!-- end / Tabla -->
 								</div>
-								<!-- end / meses -->
+							</div>
 						</div>
-						<!-- end / contenedor B -->
-
-
 					</div>
-					<!-- end / Cliente -->
-
-					<!--footer-->
-					<div class="sub-footer col-xs-12">
-					
-					</div>
-					<!--end / footer-->
 				</div>
-				<!--end / contenido-->
+			</section><!-- end #header -->
 
-			</div>
-			<!--end / base-->
+			<section id="content">
+				<div class="row">
+					<div class="inner">
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="filters">
+									<div class="col-xs-6">
+										<p>
+											facturación
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<select name="">   
+					                		<option value="">FACTURACION 2014/ 2015</option>
+					                		<option value="">FACTURACION 2014/ 2015</option>
+					                		<option value="">FACTURACION 2014/ 2015</option>
+					                		<option value="">FACTURACION 2014/ 2015</option>
+					                		<option value="">FACTURACION 2014/ 2015</option>
+					                		<option value="">FACTURACION 2014/ 2015</option>
+					                		<option value="">FACTURACION 2014/ 2015</option>
+					                		<option value="">FACTURACION 2014/ 2015</option>
+					                		<option value="">FACTURACION 2014/ 2015</option>   
+							           	</select>
+									</div>
+								</div><!-- end .filters -->
+							</div>
 
+							<div class="data">
+								<div class="col-xs-12">
+									<div class="row">
+										<h3>
+											sanchez agronegocios s.a.
+										</h3>
+										<section class="boxes">
+											<div class="col-xs-6 col-sm-3"> 
+												<div class="box">
+													<div class="top">
+														<p>
+															55.000
+														</p>
+													</div>
+													<div class="bot">
+														<span>
+															Facturación Total Período anterior
+														</span>
+													</div>
+
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-3"> 
+												<div class="box">
+													<div class="top">
+														<p>
+															110%
+															<br>
+															<span>
+																60.000
+															</span>
+														</p>
+													</div>
+													<div class="bot">
+														<span>
+															Avance Facturación Total en relación al Período anterior
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-3"> 
+												<div class="box"> 
+													<div class="top">
+														<p>
+															35%
+															<br>
+															<span>
+																35.000
+															</span>
+														</p>
+													</div>	
+													<div class="bot">
+														<span>
+															Facturación Productos Clave
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="box">
+													<div class="top">
+														<p>
+															2
+														</p>
+													</div>
+													<div class="bot">
+														<span>
+															Al momento accede
+															<br>
+															a categoría
+														</span>
+													</div>
+												</div>	
+											</div>
+										</section><!-- end .boxes -->
+
+										<section class="tables">
+											<h4>
+												avance mensual
+											</h4>
+											<div class="row">
+												<div class="col-xs-12">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr class="yrs">
+															<td width="8%" align="left" valign="middle">&nbsp;</td>
+															<td colspan="5" align="left" valign="middle"><p>2015</p></td>
+															<td colspan="3" align="left" valign="middle"><p>2016</p></td>
+														</tr>
+														<tr class="mons">
+															<td align="left" valign="middle">&nbsp;</td>
+															<td width="11.5%" align="left" valign="middle"><p>agosto</p></td>
+															<td width="11.5%" align="left" valign="middle"><p>semptiembre</p></td>
+															<td width="11.5%" align="left" valign="middle"><p>octubre</p></td>
+															<td width="11.5%" align="left" valign="middle"><p>noviembre</p></td>
+															<td width="11.5%" align="left" valign="middle"><p>diciembre</p></td>
+															<td width="11.5%" align="left" valign="middle"><p>enero</p></td>
+															<td width="11.5%" align="left" valign="middle"><p>febrero</p></td>
+															<td width="11.5%" align="left" valign="middle"><p>marzo</p></td>
+														</tr>
+														<tr>
+															<td align="center" valign="middle" class="key"><p>p. total</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p class="disabled">12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+														</tr>
+														<tr>
+															<td align="center" valign="middle" class="key"><p>p. clave</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+															<td align="center" valign="middle" class="input"><p>12345</p></td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</section><!-- end tables -->
+
+										<section class="prog-bar">
+											<h4>
+												premio
+											</h4>
+											<div class="row">
+												<div class="col-xs-12">
+													<div class="row">
+														<div class="col-xs-3 prog-position">
+															<div>
+																<p>
+																	0
+																</p>
+															</div>
+														</div>
+														<div class="col-xs-3 prog-position" id="position-1">
+															<div class="icon">
+																<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+																<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 104 104" xml:space="preserve">
+																<style type="text/css">
+																	.st0{opacity:0.6;}
+																	.st1{opacity:0.3;fill:none;stroke:#666666;stroke-miterlimit:10;}
+																</style>
+																<defs>
+																</defs>
+																<g>
+																	<g class="st0">
+																		<g>
+																			<g>
+																				<path d="M68,21.5H16.5c-0.3,0-0.6,0.2-0.6,0.5v29.9c0,0.3,0.3,0.5,0.6,0.5h19.9h0.6h0.6l-0.2,2.8H47l-0.2-2.8h0.6h0.6H68
+																					c0.3,0,0.6-0.2,0.6-0.5V22C68.6,21.7,68.3,21.5,68,21.5z M66.1,49.5c0,0.2-0.2,0.5-0.5,0.5H49h-0.6h-0.6H36.9h-0.6h-0.6H18.9
+																					c-0.3,0-0.5-0.2-0.5-0.5V24.1c0-0.2,0.2-0.5,0.5-0.5h46.7c0.3,0,0.5,0.2,0.5,0.5V49.5L66.1,49.5z"/>
+																				<path d="M49.7,57.5v-0.7c0-0.3-0.2-0.5-0.5-0.5h-0.8h-0.6h-0.6h-9.6h-0.6h-0.6h-0.8c-0.3,0-0.5,0.2-0.5,0.5v0.7
+																					c0,0.3,0.2,0.5,0.5,0.5h0.7h12.4h0.7C49.4,58.1,49.7,57.8,49.7,57.5z"/>
+																			</g>
+																		</g>
+																	</g>
+																	<g class="st0">
+																		<path d="M92,78.7h-2.3c0.2-0.3,0.3-0.6,0.3-1V57.5c0-1-0.8-1.7-1.7-1.7H56.3c-1,0-1.7,0.8-1.7,1.7v20.2c0,0.4,0.1,0.7,0.3,1h-2.4
+																			c0,0-0.1,0.1,0.2,0.4c0.8,0.8,2.6,1.1,2.6,1.1l33.5,0c0,0,2.2,0,3-1.1C92.2,78.7,92,78.7,92,78.7z M74.5,79.1H70v-0.3h4.5V79.1
+																			L74.5,79.1z M88.7,77.3H56.8V57.9h30.9v19.4H88.7z"/>
+																	</g>
+																</g>
+																<circle class="st1" cx="52" cy="52" r="51.5"/>
+																</svg>
+															</div>
+															<p>
+																1
+															</p>
+														</div>
+														<div class="col-xs-3 prog-position" id="position-2">
+															<div class="icon">
+																<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+																<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 104 104" xml:space="preserve">
+																<style type="text/css">
+																	.st0{opacity:0.6;}
+																	.st1{opacity:0.3;fill:none;stroke:#666666;stroke-miterlimit:10;}
+																</style>
+																<defs>
+																</defs>
+																<g>
+																	<g class="st0">
+																		<g>
+																			<g>
+																				<path d="M68,21.5H16.5c-0.3,0-0.6,0.2-0.6,0.5v29.9c0,0.3,0.3,0.5,0.6,0.5h19.9h0.6h0.6l-0.2,2.8H47l-0.2-2.8h0.6h0.6H68
+																					c0.3,0,0.6-0.2,0.6-0.5V22C68.6,21.7,68.3,21.5,68,21.5z M66.1,49.5c0,0.2-0.2,0.5-0.5,0.5H49h-0.6h-0.6H36.9h-0.6h-0.6H18.9
+																					c-0.3,0-0.5-0.2-0.5-0.5V24.1c0-0.2,0.2-0.5,0.5-0.5h46.7c0.3,0,0.5,0.2,0.5,0.5V49.5L66.1,49.5z"/>
+																				<path d="M49.7,57.5v-0.7c0-0.3-0.2-0.5-0.5-0.5h-0.8h-0.6h-0.6h-9.6h-0.6h-0.6h-0.8c-0.3,0-0.5,0.2-0.5,0.5v0.7
+																					c0,0.3,0.2,0.5,0.5,0.5h0.7h12.4h0.7C49.4,58.1,49.7,57.8,49.7,57.5z"/>
+																			</g>
+																		</g>
+																	</g>
+																	<g class="st0">
+																		<path d="M92,78.7h-2.3c0.2-0.3,0.3-0.6,0.3-1V57.5c0-1-0.8-1.7-1.7-1.7H56.3c-1,0-1.7,0.8-1.7,1.7v20.2c0,0.4,0.1,0.7,0.3,1h-2.4
+																			c0,0-0.1,0.1,0.2,0.4c0.8,0.8,2.6,1.1,2.6,1.1l33.5,0c0,0,2.2,0,3-1.1C92.2,78.7,92,78.7,92,78.7z M74.5,79.1H70v-0.3h4.5V79.1
+																			L74.5,79.1z M88.7,77.3H56.8V57.9h30.9v19.4H88.7z"/>
+																	</g>
+																</g>
+																<circle class="st1" cx="52" cy="52" r="51.5"/>
+																</svg>
+															</div>
+															<p>
+																2
+															</p>
+														</div>
+														<div class="col-xs-3 prog-position" id="position-3">
+															<div class="icon">
+																<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+																<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 104 104" xml:space="preserve">
+																<style type="text/css">
+																	.st0{opacity:0.6;}
+																	.st1{opacity:0.3;fill:none;stroke:#666666;stroke-miterlimit:10;}
+																</style>
+																<defs>
+																</defs>
+																<g>
+																	<g class="st0">
+																		<g>
+																			<g>
+																				<path d="M68,21.5H16.5c-0.3,0-0.6,0.2-0.6,0.5v29.9c0,0.3,0.3,0.5,0.6,0.5h19.9h0.6h0.6l-0.2,2.8H47l-0.2-2.8h0.6h0.6H68
+																					c0.3,0,0.6-0.2,0.6-0.5V22C68.6,21.7,68.3,21.5,68,21.5z M66.1,49.5c0,0.2-0.2,0.5-0.5,0.5H49h-0.6h-0.6H36.9h-0.6h-0.6H18.9
+																					c-0.3,0-0.5-0.2-0.5-0.5V24.1c0-0.2,0.2-0.5,0.5-0.5h46.7c0.3,0,0.5,0.2,0.5,0.5V49.5L66.1,49.5z"/>
+																				<path d="M49.7,57.5v-0.7c0-0.3-0.2-0.5-0.5-0.5h-0.8h-0.6h-0.6h-9.6h-0.6h-0.6h-0.8c-0.3,0-0.5,0.2-0.5,0.5v0.7
+																					c0,0.3,0.2,0.5,0.5,0.5h0.7h12.4h0.7C49.4,58.1,49.7,57.8,49.7,57.5z"/>
+																			</g>
+																		</g>
+																	</g>
+																	<g class="st0">
+																		<path d="M92,78.7h-2.3c0.2-0.3,0.3-0.6,0.3-1V57.5c0-1-0.8-1.7-1.7-1.7H56.3c-1,0-1.7,0.8-1.7,1.7v20.2c0,0.4,0.1,0.7,0.3,1h-2.4
+																			c0,0-0.1,0.1,0.2,0.4c0.8,0.8,2.6,1.1,2.6,1.1l33.5,0c0,0,2.2,0,3-1.1C92.2,78.7,92,78.7,92,78.7z M74.5,79.1H70v-0.3h4.5V79.1
+																			L74.5,79.1z M88.7,77.3H56.8V57.9h30.9v19.4H88.7z"/>
+																	</g>
+																</g>
+																<circle class="st1" cx="52" cy="52" r="51.5"/>
+																</svg>
+															</div>
+															<p>
+																3
+															</p>
+														</div>
+													</div><!-- end progress positions -->
+													<div class="progress">
+													  	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+													  		<img src="assets/images/progresbg.png" class="img-responsive">
+												    		<span class="sr-only">70% Complete</span>
+													  	</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12 indicator">
+															<p>
+																estos son tus resultados
+																<br> 
+																al día de hoy, 
+																<br>
+																sigamos trabajando juntos 
+																<br>
+																para acceder 
+																<br>
+																a los máximos premios.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section><!-- end .prog-bar -->
+									</div>
+								</div>
+							</div><!-- end .data -->
+						</div>
+					</div><!-- end .inner -->
+				</div>
+			</section><!-- end #content -->
 		</div>
-		<!-- // CONTENEDOR GENERAL*********************************************-->
 
 		<div class="footer" style="position: relative;">
             <img src="assets/images/Nufarm-max-logo-verde.png" id="Nufarm" title="Nufarm" alt="Imagen no encontrada">
